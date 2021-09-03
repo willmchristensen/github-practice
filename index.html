@@ -5,8 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    .column{
+        float: left;
+        width: 25%;
+        padding: 10px;
+    }
+    .row:after {
+        content:"";
+        display:table;
+        clear:both;
+    }
+    ul{
+        list-style-type: none;
+        overflow: ;
+        background-color: darkcyan;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    li{
+        float:left;
+    }
+    li a{
+        display: block;
+        color:white;
+        text-align: center;
+        padding: 20px, 20px;
+        text-decoration: none;
+    }
+    .active{
+        color:yellowgreen;
+    }
+    a:hover{
+        color:yellow;
+        background-color: black;
+    }
+
+</style>  
 </head>
 <body>
-    
+    <ul>
+        <li class="active"><a href="#Home">Home</a></li>
+        <li><a href="#News">News</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li><a href="#About">About</a></li>
+    </ul>
+    <h2>github practice</h2>
+
+    <div class="row">
+        <div class="column" style="background-color: aliceblue;">
+            <h2>learning github has been fun</h2>
+            <p>useful tool</p>
+        </div>
+        <div class="column" style="background-color: aliceblue;">
+            <h2>column2</h2>
+            <p>text</p>
+        </div>
+        <div class="column" style="background-color: aliceblue;">
+            <h2>column3</h2>
+            <p>text</p>
+        </div>
+        <div class="column" style="background-color: aliceblue;">
+            <h2>column4</h2>
+            <p>text</p>
+        </div>
+    </div>
+ 
 </body>
 </html>
